@@ -1,0 +1,20 @@
+CREATE TABLE Client(
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name VARCHAR(200) NOT NULL CHECK (CHAR_LENGTH(name) >= 3));
+
+CREATE TABLE Planet(
+    id  VARCHAR PRIMARY KEY CHECK (id ~ '^[A-Z0-9]+$'),
+    name VARCHAR(500) NOT NULL CHECK (CHAR_LENGTH(name) >= 1));
+
+CREATE TABLE Ticket(
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    created_at TIMESTAMP WITH TIME ZONE GENERATED ALWAYS AS CURRENT_TIMESTAMP(),
+    client_id BIGINT,
+    from_planet_id VARCHAR NOT NULL REFERENCES planet(id),
+    to_planet_id VARCHAR NOT NULL REFERENCES planet(id),
+    FOREIGN KEY(id) REFERENCES ticket(id),
+    FOREIGN KEY(client_id) REFERENCES Client(id),
+    CHECK from_planet_id  != to_planet_id);
+
+
+

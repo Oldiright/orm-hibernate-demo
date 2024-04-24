@@ -1,2 +1,6 @@
 
-E	java:S106"+Replace this use of System.out by a logger.(‚ŞÏ¥ıÿÿÿÿ
+X
+java:S1854";Remove this useless assignment to local variable "service".(¶Î…8ˆË‡ığ1
+L	java:S106"+Replace this use of System.out by a logger.(‚ŞÏ¥ıÿÿÿÿ8¶·Íüğ1
+I
+java:S1481",Remove this unused "service" local variable.(¶Î…8Ë‡ığ1

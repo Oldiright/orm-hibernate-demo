@@ -1,2 +1,4 @@
-package org.example.dao;public class PlanetDao {
+package org.example.db.dao;
+
+public class PlanetDao {
 }

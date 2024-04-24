@@ -1,5 +1,15 @@
+
+
 plugins {
     id 'java'
+    id "org.flywaydb.flyway" version "10.0.0"
+}
+
+flyway {
+    url = 'jdbc:h2:~/interplanet-express_db'
+    user = 'root'
+    password = 'secret';
+
 }
 
 group = 'org.example'
@@ -12,6 +22,12 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation group: 'com.h2database', name: 'h2', version: '2.2.224'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.30'
+    implementation group: 'org.hibernate.orm', name: 'hibernate-core', version: '6.4.4.Final'
+
+
 }
 
 test {
