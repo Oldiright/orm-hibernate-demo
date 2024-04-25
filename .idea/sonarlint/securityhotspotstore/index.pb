@@ -34,3 +34,17 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+e
+5src/main/java/org/example/services/ClientService.java,c\d\cdbcac432077e2c54201d6a0e63a21c6dbe95994
+7
+gradlew,5\b\5bbfa66edb4db3c7c33c5181f43510990d3307f9
+\
+,src/main/java/org/example/ClientService.java,f\d\fd51a5019aad83b997f4ced3232b8da103191879
+_
+/src/main/java/org/example/db/dao/ClienTDao.java,2\9\29dc177cea0f549bc2c7e128dc16d2f09012a629
+e
+5src/main/java/org/example/services/PersonService.java,3\2\329753aaf2ae182f82c69f8aeb07605520401914
+i
+9src/main/java/org/example/services/ClientCrudService.java,7\b\7b92ab79db0d82e0d9bc25731d4601e0fa9590b0
+i
+9src/main/java/org/example/services/PlanetCrudService.java,9\5\95806c4ec0e0b9b5285845a43492dc98a100daba

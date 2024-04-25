@@ -1,6 +1,9 @@
 package org.example.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -11,21 +14,15 @@ import java.time.ZonedDateTime;
 @Table(name = "ticket")
 public class Ticket {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @Column(name = "client_id")
     private long clientId;
+    @Column(name = "created_at")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private ZonedDateTime createdAt;
+    @Column(name = "from_planet_id")
     private String fromPlanetId;
+    @Column(name = "to_planet_id")
     private String toPlanetId;
-
-
-
-//    CREATE TABLE Ticket(
-//            id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-//            created_at TIMESTAMP WITH TIME ZONE GENERATED ALWAYS AS CURRENT_TIMESTAMP(),
-//    client_id BIGINT,
-//    from_planet_id VARCHAR NOT NULL REFERENCES planet(id),
-//    to_planet_id VARCHAR NOT NULL REFERENCES planet(id),
-//    FOREIGN KEY(id) REFERENCES ticket(id),
-//    FOREIGN KEY(client_id) REFERENCES Client(id),
-//    CHECK from_planet_id  != to_planet_id);
 }
