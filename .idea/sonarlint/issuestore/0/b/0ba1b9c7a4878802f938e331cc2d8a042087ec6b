@@ -1,15 +1,12 @@
 
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨žâûüÿÿÿÿ8Ô®ä®ñ1
-r	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€‘†³ýÿÿÿÿ8Ô®ä®ñ1
-]	java:S125"<This block of commented-out lines of code should be removed.(™Ú¡…ûÿÿÿÿ8Ø®ä®ñ1
-]	java:S125"<This block of commented-out lines of code should be removed.(îÈ×‹üÿÿÿÿ8Ù®ä®ñ1
-X	java:S125"<This block of commented-out lines of code should be removed.(‰á­Ö8Ù®ä®ñ1
-]	java:S125&"<This block of commented-out lines of code should be removed.(¦ðÑ¯øÿÿÿÿ8Ú®ä®ñ1
-]	java:S125+"<This block of commented-out lines of code should be removed.(îÈ×‹üÿÿÿÿ8Û®ä®ñ1
-X	java:S125."<This block of commented-out lines of code should be removed.(‰á­Ö8Û®ä®ñ1
-F	java:S1069"+Replace this use of System.out by a logger.(ÜàâV8Û®ä®ñ1
-L	java:S106:"+Replace this use of System.out by a logger.(ÿÃŒæüÿÿÿÿ8Û®ä®ñ1
-L	java:S106;"+Replace this use of System.out by a logger.(Ù¸…æúÿÿÿÿ8Ü®ä®ñ1
-L	java:S106<"+Replace this use of System.out by a logger.(¸­àÉùÿÿÿÿ8Ü®ä®ñ1
-G	java:S106="+Replace this use of System.out by a logger.(³ÿ©8Ü®ä®ñ1
-L	java:S106>"+Replace this use of System.out by a logger.(°½ Ôùÿÿÿÿ8Ü®ä®ñ1
+]	java:S125"<This block of commented-out lines of code should be removed.(¯¼¥±úÿÿÿÿ8œëÿ±ñ1
+X	java:S125""<This block of commented-out lines of code should be removed.(ˆÄ’€8¾ß²ñ1
+X	java:S125&"<This block of commented-out lines of code should be removed.(”½»8Ú®ä®ñ1
+]	java:S125*"<This block of commented-out lines of code should be removed.(ÕÁ•—üÿÿÿÿ8ˆà²ñ1
+]	java:S1259"<This block of commented-out lines of code should be removed.(Ç•ÖŽûÿÿÿÿ8‰µ€²ñ1
+X
+java:S1128"6Remove this unused import 'org.example.entity.Client'.(„‹Óþÿÿÿÿ8š±Ü²ñ1
+e
+java:S1128"CRemove this unused import 'org.example.services.ClientCrudService'.( ¬“ÿùÿÿÿÿ8›±Ü²ñ1
+e
+java:S1128"CRemove this unused import 'org.example.services.PlanetCrudService'.(‚¿öºøÿÿÿÿ8¿ß²ñ1

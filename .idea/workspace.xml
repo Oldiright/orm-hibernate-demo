@@ -4,23 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbdc22fd-a122-41d3-bb93-ac80435e7650" name="Changes" comment="updated entities (Client, Planet). Client entity in progress">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/services/ClientCrudService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/services/PlanetCrudService.java" afterDir="false" />
+    <list default="true" id="dbdc22fd-a122-41d3-bb93-ac80435e7650" name="Changes" comment="Finished CrudServices for planet and client">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c048f183c8d064b36f530bc9e2ec12e0782c6261" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c048f183c8d064b36f530bc9e2ec12e0782c6261" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/f/bfc16e2879106ac24605c9b90caa55c58e559715" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/f/bfc16e2879106ac24605c9b90caa55c58e559715" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PersonService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/db/dao/PersonDao.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/db/dao/PlanetDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/db/dao/PlanetDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Planet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +67,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -88,24 +83,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.orm-hibernate-demo [:Main.main()].executor": "Run",
-    "Gradle.orm-hibernate-demo [clean].executor": "Run",
-    "Gradle.orm-hibernate-demo [flywayClean].executor": "Run",
-    "Gradle.orm-hibernate-demo [flywayMigrate].executor": "Run",
-    "Gradle.orm-hibernate-demo [flywayRepair].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.orm-hibernate-demo [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.orm-hibernate-demo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.orm-hibernate-demo [flywayClean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.orm-hibernate-demo [flywayMigrate].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.orm-hibernate-demo [flywayRepair].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.services" />
@@ -247,11 +242,20 @@
       <option name="project" value="LOCAL" />
       <updated>1713994170898</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finished CrudServices for planet and client">
+      <option name="closed" value="true" />
+      <created>1714058781326</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714058781326</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated entities (Client, Planet). Client entity in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated entities (Client, Planet). Client entity in progress" />
+    <MESSAGE value="Finished CrudServices for planet and client" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished CrudServices for planet and client" />
   </component>
 </project>
