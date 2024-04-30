@@ -41,6 +41,4 @@ public class PlanetDao {
             tx.commit();
         }
     }
-
-
 }

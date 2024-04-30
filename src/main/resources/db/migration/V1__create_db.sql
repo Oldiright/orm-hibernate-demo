@@ -12,7 +12,6 @@ CREATE TABLE Ticket(
     client_id BIGINT,
     from_planet_id VARCHAR NOT NULL REFERENCES planet(id),
     to_planet_id VARCHAR NOT NULL REFERENCES planet(id),
-    FOREIGN KEY(id) REFERENCES ticket(id),
     FOREIGN KEY(client_id) REFERENCES Client(id),
     CHECK from_planet_id  != to_planet_id);
 

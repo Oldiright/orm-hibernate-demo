@@ -1,56 +1,44 @@
 package org.example.db.dao;
 
 import org.example.HibernateUtil;
-import org.example.entity.Client;
+import org.example.entity.Ticket;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import java.util.List;
-
-public class ClientDao {
+public class TicketDao {
     private SessionFactory sessionFactory = HibernateUtil.getInstance().getSessionFactory();
 
     // Create
-    public void save(Client client) {
+    public void save(Ticket ticket) {
         try (Session session = sessionFactory.openSession()) {
             Transaction tx = session.beginTransaction();
-            session.save(client);
+            session.persist(ticket);
             tx.commit();
         }
     }
 
     // Read
-    public Client findById(Long id) {
+    public Ticket findById(Long id) {
         try (Session session = sessionFactory.openSession()) {
-            return session.get(Client.class, id);
-        }
-    }
-    public Client findByName(String name) {
-        try (Session session = sessionFactory.openSession()){
-            String query = "from Client c WHERE name = '%s'";
-            query = String.format(query, name);
-            System.out.println(query);
-            List<Client> clientList = session.createQuery(query , Client.class).list();
-            System.out.println(clientList.isEmpty());
-            return clientList.get(0);
+            return session.get(Ticket.class, id);
         }
     }
 
     // Update
-    public void update(Client client) {
+    public void update(Ticket ticket) {
         try (Session session = sessionFactory.openSession()) {
             Transaction tx = session.beginTransaction();
-            session.update(client);
+            session.update(ticket);
             tx.commit();
         }
     }
 
     // Delete
-    public void delete(Client client) {
+    public void delete(Ticket ticket) {
         try (Session session = sessionFactory.openSession()) {
             Transaction tx = session.beginTransaction();
-            session.delete(client);
+            session.delete(ticket);
             tx.commit();
         }
     }

@@ -14,6 +14,7 @@ public class ClientCrudService {
     public Client findClientById(Long id) {
         return clientDao.findById(id);
     }
+    public Client findClientByName(String name) {return  clientDao.findByName(name);}
 
     public void updateClient(Client client) {
         clientDao.update(client);

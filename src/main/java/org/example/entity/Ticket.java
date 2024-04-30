@@ -5,6 +5,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 
@@ -16,13 +18,15 @@ public class Ticket {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "client_id")
-    private long clientId;
-    @Column(name = "created_at")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "created_at", insertable = false, updatable = false)
     private ZonedDateTime createdAt;
-    @Column(name = "from_planet_id")
-    private String fromPlanetId;
-    @Column(name = "to_planet_id")
-    private String toPlanetId;
+    @ManyToOne
+    @JoinColumn(name = "from_planet_id", nullable = false)
+    private Planet fromPlanetId;
+    @ManyToOne
+    @JoinColumn(name = "to_planet_id", nullable = false)
+    private Planet toPlanetId;
+    @ManyToOne
+    @JoinColumn(name="client_id", nullable=false)
+    private Client client;
 }

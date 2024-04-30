@@ -1,12 +1,23 @@
 
-]	java:S125"<This block of commented-out lines of code should be removed.(¯¼¥±úÿÿÿÿ8œëÿ±ñ1
-X	java:S125""<This block of commented-out lines of code should be removed.(ˆÄ’€8¾ß²ñ1
-X	java:S125&"<This block of commented-out lines of code should be removed.(”½»8Ú®ä®ñ1
-]	java:S125*"<This block of commented-out lines of code should be removed.(ÕÁ•—üÿÿÿÿ8ˆà²ñ1
-]	java:S1259"<This block of commented-out lines of code should be removed.(Ç•Öûÿÿÿÿ8‰µ€²ñ1
+h
+java:S1192"KDefine a constant instead of duplicating this literal "Mister Dou" 3 times.(ó÷úÁ8£ãùüò1
+W	java:S125"<This block of commented-out lines of code should be removed.(ƒØ‘m8©ãùüò1
+]	java:S125"<This block of commented-out lines of code should be removed.(îÈ×‹üÿÿÿÿ8ªãùüò1
+L	java:S106"+Replace this use of System.out by a logger.(× ÿÿÿÿÿÿ8ªãùüò1
+L	java:S106"+Replace this use of System.out by a logger.(¨ûÈŸùÿÿÿÿ8ªãùüò1
+X	java:S125"<This block of commented-out lines of code should be removed.(‰á­Ö8ªãùüò1
+G	java:S106 "+Replace this use of System.out by a logger.(Â’8«ãùüò1
+L	java:S106#"+Replace this use of System.out by a logger.(ÿÃŒæüÿÿÿÿ8«ãùüò1
+L	java:S106)"+Replace this use of System.out by a logger.(÷Ê‚•øÿÿÿÿ8«ãùüò1
+X	java:S125,"<This block of commented-out lines of code should be removed.(ˆÄ’€8«ãùüò1
+]	java:S125/"<This block of commented-out lines of code should be removed.(“ÁˆĞüÿÿÿÿ8¬ãùüò1
+W	java:S1259"<This block of commented-out lines of code should be removed.(éŠ¼48¬ãùüò1
+X	java:S125D"<This block of commented-out lines of code should be removed.(ãÒô£8¬ãùüò1
 X
-java:S1128"6Remove this unused import 'org.example.entity.Client'.(„‹Óşÿÿÿÿ8š±Ü²ñ1
+java:S1128"6Remove this unused import 'org.example.entity.Planet'.(ÃÍšıÿÿÿÿ8¬ãùüò1
+X
+java:S1128"6Remove this unused import 'org.example.entity.Ticket'.(Ş”¤ÿÿÿÿÿ8¬ãùüò1
 e
-java:S1128"CRemove this unused import 'org.example.services.ClientCrudService'.( ¬“ÿùÿÿÿÿ8›±Ü²ñ1
-e
-java:S1128"CRemove this unused import 'org.example.services.PlanetCrudService'.(‚¿öºøÿÿÿÿ8¿ß²ñ1
+java:S1128"CRemove this unused import 'org.example.services.PlanetCrudService'.(‚¿öºøÿÿÿÿ8¬ãùüò1
+`
+java:S1128	"CRemove this unused import 'org.example.services.TicketCrudService'.(ßò÷ˆ8¬ãùüò1
